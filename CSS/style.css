@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root {
+    --main-color: #D0D6F9;
+    --second-color: #fff;
+    --last-color: #0B0D17;
+    --main-transition: .5s;
+}
+/* Start Home section */
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/home/background-home-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    color : var(--main-color);
+}
+#home header {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+#home header nav {
+    position: absolute;
+    width: 750px;
+    height: 96px;
+    left: 319px;
+    top: 60px;
+    padding-right: 40px;
+    margin-left: 60px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home header nav a {
+    position: relative;
+    max-width:100% ;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--main-color);
+    text-transform: uppercase;
+    margin-left: 100px;
+    display: flex;
+    gap: 5px;
+    transition: var(--main-transition);
+}
+#home header nav a span {
+    color: var(--second-color) ;
+    opacity: 1;
+}
+#home header nav a:hover ::after {
+    content: "";
+    background-color: var(--second-color);
+    width: 105%;
+    left: -1px;
+    height: 2px;
+    position: absolute;
+    transform: translateY(55px);
+    animation: hovereffect .4s linear;
+}
+@keyframes hovereffect {
+    0% {
+    width: 0;
+    }
+    100%{
+    width: 100%;
+    }
+
+}
+.home-content {
+    position: absolute;
+    width: 450px;
+    height: 382px;
+    left: 165px;
+    top: 340px;
+}
+.home-content h1 {
+    font-family: Barlow Condensed;
+    font-size: 22px;
+    font-weight: 400;
+    left:-0.11%;
+    text-transform: uppercase;
+    letter-spacing: 4.725px;
+    word-spacing: 3px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.home-content h1 span {
+    display: block;
+    color: var(--second-color);
+    font-size: 150px;
+}
+.home-content p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.816;
+    font-weight: 400;
+    opacity: 0.8;
+}
+.explore {
+    position: absolute;
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    right: 165px;
+    bottom: 100px;
+}
+.explore p {
+    color: #000;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* End Home Section */
+
+/* Start Destiation Section */
+#destiation {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    color : var(--main-color);
+}
+#destiation .contaier {
+    position: absolute;
+    left: 100px;
+    top: 120px;
+    margin-left: 100px;
+}
+#destiation .contaier h2 {
+    color: var(--second-color);
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 100px;
+    display: flex;
+    gap: 15px;
+    margin-left: -20px;
+}
+#destiation .contaier h2 span {
+    color: var(--main-color);
+    opacity: 0.5;
+}
+#destiation .contaier .destiation-content {
+    display: flex; 
+    gap:150px
+}
+.destiation-content .planet-img {
+    margin-left: 30px;
+}
+.destiation-content .text-content {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin-top: -30px;
+}
+.destiation-content .text-content ul {
+    display: flex;
+}
+.destiation-content .text-content ul li {
+    list-style: none;
+    margin-right: 30px;
+}
+.destiation-content .text-content ul li a:not(.active-one) {
+    position: relative;
+    width: 100%;
+    color: var(--main-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+a.active-one {
+    position: relative;
+    width: 100%;
+    color: var(--second-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+a.active-one::after {
+    content: "";
+    background-color: var(--second-color) !important;
+    opacity: 1;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    bottom: 40px;
+    position: absolute;
+    transform: translateY(55px);
+}
+.text-content ul li:hover a::after {
+    content: "";
+    background-color: var(--main-color);
+    opacity: 0.5;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    bottom: 40px;
+    position: absolute;
+    transform: translateY(55px);
+    animation: hovereffect .3s linear;
+}
+.destiation-content .text-content h3 {
+    color: var(--second-color);
+    font-size: 130px;
+    text-transform: uppercase;
+}
+.destiation-content .text-content #planet-info {
+    position: relative;
+    color: var(--main-color);
+    font-size: 15px;
+    line-height: 2.3;
+    width: 450px;
+    margin-bottom: 70px;
+    opacity: 0.8;
+}
+.destiation-content .text-content #planet-info::after {
+    content:" " ;
+    position: absolute;
+    background-color: var(--main-color);
+    width: 100%;
+    height: .5px;
+    left: 0;
+    bottom:-70px;
+}
+.destiation-content .text-content .extar-info {
+    display: flex;
+    gap: 80px;
+}
+.destiation-content .text-content .extar-info p {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.destiation-content .text-content .extar-info p span {
+    display: block;
+    color: var(--second-color);
+    font-size: 28px;
+    margin-top: 15px;
+}
+/* Destiation section End */
+
+/* Technology section Start */
+#technology {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/technology/background-technology-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    color : var(--main-color);
+}
+#technology .cont {
+    display: flex;
+    flex-direction: column; 
+    gap:120px; 
+    position: absolute;
+    left: 180px;
+    top:100px;
+}
+#technology .cont .technologt-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 40px;
+}
+#technology .cont .technologt-content .content-text {
+    width: 420px;
+}
+#technology .cont h2 {
+    color: var(--second-color);
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    display: flex;
+    gap: 15px;
+    /* margin-bottom: 20px; */
+    /* margin-left: -20px; */
+}
+#technology .cont h2 span {
+    color: var(--main-color);
+    opacity: 0.5;
+}
+#technology .cont .technologt-content #numbers ul li {
+    list-style: none;
+    margin-bottom: 40px;
+}
+#technology .cont .technologt-content #numbers ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: transparent;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid var(--main-color);
+    color: var(--second-color);
+    font-size: 30px;
+    text-decoration: none;
+}
+a.active-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: var(--last-color) !important;
+    font-size: 30px;
+    text-decoration: none;
+}
+#technology .cont .technologt-content .content-text {
+    margin-left: 20px;
+}
+#technology .cont .technologt-content .content-text h3 {
+    font-size: 10px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+#technology .cont .technologt-content .content-text .techno-info h4 {
+    font-size: 40px;
+    color: var(--second-color);
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+#technology .cont .technologt-content .content-text .techno-info #info {
+    font-size: 16px;
+    color: var(--main-color);
+    line-height: 1.9;
+    letter-spacing: 2px;
+}
+#technology .cont .technologt-content .techno-image img {
+    transform: translate(30%,-15%);
+    width: 500px;
+    height: 530px;
+}
+/* Technology section End */
+
+
+
+

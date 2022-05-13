@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Space Company Work On Develop A Space Technology To Help Humans To Travel into The Space .">
+    <meta name="description" content="Space Company manufactures and launches advanced rockets and spacecraft, with the ultimate goal of enabling people to live on other planets.">
+    <meta name="KeyWords" content="Space,Space Company, travel to space,space technology,mars,moon,titan,europa,space exploration">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../html/favicon_io (4)/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../html/favicon_io (4)/favicon-16x16.png">
+    <link rel="manifest" href="../html/favicon_io (4)/site.webmanifest">
+    <title>Space Company</title>
+</head>
+<body>
+    <!-- Home Start -->
+    <section id="home">
+        <header>
+            <nav>
+            <a href="#home" class="static"><span>00</span>Home</a>
+            <a href="#destiation"><span>01</span>Destiation</a>
+            <a href="#technology"><span>02</span>Technology</a>
+            </nav>
+        </header>
+        <div class="home-content">
+            <h1>So You Want To Travel To <span>Space</span></h1>
+            <p>Let’s face it; if you want to go to space, you might as well genuinely 
+                go to outer space and not hover kind of on the edge of it. Well sit back, and relax 
+                because we’ll give you a truly out of this world experience !</p>
+        </div>
+        <div class="explore"><p>Explore</p></div>
+    </section>
+    <!-- Home End -->
+    <!-- Destiation Start -->
+    <section id="destiation">
+        <div class="contaier">
+            <h2><span>01</span>Pick your destination</h2>
+            <div class="destiation-content">
+                <div class="planet-img">
+                    <img src="../assets/destination/image-moon.webp" id="planet-image">
+                </div>
+                <div class="text-content">
+                    <ul class="one">
+                    <li><a class="child active-one" id="moon" href="#destiation" target="_self" onclick="changeName('moon');changeImg('../assets/destination/image-moon.webp');speed('384.400 km');days('3 days');info(`${moonInfo}`);">moon</a></li>
+                    <li><a class="child" id="mars" href="#destiation" target="_self" onclick="changeName('mars');changeImg('../assets/destination/image-mars.webp');speed('225 MIL. km');days('9 months');info(`${marsInfo}`);">mars</a></li>
+                    <li><a class="child" id="europa" href="#destiation" target="_self" onclick="changeName('europa');changeImg('../assets/destination/image-europa.webp');speed('628 MIL. km');days('3 years');info(`${europaInfo}`);">europa</a></li>
+                    <li><a class="child" id="titan" href="#destiation" target="_self" onclick="changeName('titan');changeImg('../assets/destination/image-titan.webp');speed('1.6 BIL. km');days('7 years');info(`${titanInfo}`);">titan</a></li>
+                    </ul>
+                    <h3 id="planet-name">moon</h3>
+                    <p id="planet-info">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and
+                    come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                    <div class="extar-info">
+                        <p>AVG. DISTANCE<span id="speed">384,400 km</span></p>
+                        <p>Est. travel time<span id="days">3 days</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Destiation End -->
+    <!-- Technology Start -->
+        <section id="technology">
+            <div class="cont">
+                <h2><span>03</span> SPACE LAUNCH 101</h2>
+                <div class="technologt-content">
+                    <div id="numbers">
+                        <ul class="two">
+                        <li><a class=" a active-two" href="#technology" id="one" target="_self">1</a></li>
+                        <li><a class="a" href="#technology" id="two" target="_self">2</a></li>
+                        <li><a class="a" href="#technology" id="three" target="_self">3</a></li>
+                        </ul>
+                    </div>
+                    <div class="content-text">
+                        <h3>THE TERMINOLOGY…</h3>
+                        <div class="techno-info">
+                        <h4 id="tech-name">LAUNCH VEHICLE</h4>
+                        <p id="info">A launch vehicle or carrier rocket is a rocket-propelled vehicle 
+                        used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. 
+                        Our WEB-X carrier rocket is the most powerful in operation. Standing 
+                        150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+                        </div>
+                    </div>
+                    <div class="techno-image">
+                        <img src="../assets/technology/image-launch-vehicle-portrait.jpg" id="tec-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Technology End -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="../JS/main.js"></script>
+</body>
+</html>
